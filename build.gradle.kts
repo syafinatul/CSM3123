@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.composearticle"
-    compileSdk = 33
+    namespace = "com.example.taskcompleted"
+    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.composearticle"
+        applicationId = "com.example.taskcompleted"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
@@ -40,13 +40,14 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.7"
+        kotlinCompilerExtensionVersion = "1.8.21"
     }
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    buildToolsVersion = "34.0.0"
 }
 
 dependencies {
